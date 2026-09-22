@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Ghostlark: a lark drawn as a ghost. HIG: artwork on an 824px squircle centered in the 1024 canvas -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14264D"/>
+      <stop offset="1" stop-color="#060F22"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.55" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#3B9DFA" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#3B9DFA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.6" stop-color="#E6F2FF"/>
+      <stop offset="1" stop-color="#B9D9FF" stop-opacity="0.82"/>
+    </linearGradient>
+    <linearGradient id="wing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3A6"/>
+      <stop offset="1" stop-color="#3B9DFA"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="20"/>
+      <feOffset dy="22" result="b"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(100 100) scale(0.8046875)">
+    <rect x="0" y="0" width="1024" height="1024" rx="230" fill="url(#bg)"/>
+    <rect x="0" y="0" width="1024" height="1024" rx="230" fill="url(#glow)"/>
+    <!-- flight path: a dashed arc the bird has slipped along -->
+    <path d="M 90 800 Q 300 860 470 760" fill="none" stroke="#6FB6FF" stroke-opacity="0.45" stroke-width="12" stroke-linecap="round" stroke-dasharray="4 34"/>
+    <g fill="#6FB6FF" fill-opacity="0.5">
+      <circle cx="812" cy="212" r="9"/><circle cx="880" cy="330" r="6"/><circle cx="180" cy="230" r="7"/>
+    </g>
+
+    <g transform="rotate(-14 512 512)" filter="url(#shadow)">
+      <!-- raised wing: three long rounded flight feathers fanning from the shoulder -->
+      <path d="M 450 590 Q 330 560 205 530 Q 300 640 450 640 Z" fill="#3B9DFA"/>
+      <path d="M 450 580 Q 290 500 140 410 Q 250 590 440 630 Z" fill="#2FB8D0"/>
+      <path d="M 450 570 Q 270 430 105 275 Q 215 520 430 620 Z" fill="url(#wing)"/>
+      <!-- crest: swept-back head feathers -->
+      <path d="M 485 300 Q 440 215 345 190 Q 405 250 425 345 Z" fill="#FFFFFF"/>
+      <path d="M 540 288 Q 515 200 440 150 Q 478 225 485 305 Z" fill="#E6F2FF"/>
+      <!-- beak -->
+      <path d="M 738 470 L 868 520 L 738 560 Z" fill="#FFC857"/>
+      <!-- ghost body with scalloped hem -->
+      <path d="M 330 500 A 215 215 0 0 1 760 500 L 760 760 Q 724 705 688 760 Q 652 815 616 760 Q 580 705 545 760 Q 509 815 473 760 Q 437 705 401 760 Q 366 815 330 760 Z" fill="url(#body)"/>
+      <!-- eye -->
+      <circle cx="648" cy="468" r="30" fill="#0B1B3A"/>
+      <circle cx="658" cy="458" r="9" fill="#FFFFFF"/>
+      <!-- folded inner wing line on the body -->
+      <path d="M 400 650 Q 480 615 525 535" fill="none" stroke="#9CC8F5" stroke-width="14" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

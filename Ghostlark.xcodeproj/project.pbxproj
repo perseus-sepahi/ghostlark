@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		106568E9F90156BB830A018C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3932CCCD5C3F20790889559A /* Assets.xcassets */; };
+		15B72C3B939FE7459E123DE9 /* SafetyScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45340D1092F90F16F2A8A1D /* SafetyScorer.swift */; };
+		4336AE7776A2E677A816D530 /* CoreProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D8E3F10E035A301884E328 /* CoreProcess.swift */; };
+		4853E26ECB327DF95B40E85D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D1A0F69035ADF83723E384 /* AppState.swift */; };
+		4D791D7D2F638D685AE2819E /* sing-box in Resources */ = {isa = PBXBuildFile; fileRef = BB3D8C84F79A552D4841AD88 /* sing-box */; };
+		4F8C47469CBC125FE73605E9 /* LogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570048B78314B14BAD6C4195 /* LogStore.swift */; };
+		54B70575C7546E44F6F238AE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A63E894156C1D0D533478 /* SettingsView.swift */; };
+		5E7879C98E3D40B5B6A7F33F /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E024AEC03B413DDF5B535D /* DashboardView.swift */; };
+		5E82DA1DB28D7934BE2E89E0 /* SystemProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9764009F7AFA1549D89DA4 /* SystemProxy.swift */; };
+		718D926D06AF5F4AB302906C /* ServersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53D78BE6C276EE083E3E3B /* ServersView.swift */; };
+		789B5415B431982673DA41A3 /* ClashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980B8EB89B6DC5460D3C163 /* ClashAPI.swift */; };
+		9285F0956FBBB41AABE3E0E3 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8215E7CE5645332EA8D702D1 /* MenuBarView.swift */; };
+		95B05423267D205EFFFA3528 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA30B84F8FF578371EC7E5 /* ConnectionManager.swift */; };
+		A8514AFBA8531AD7126FD145 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81527B2CE9CB52E12C117034 /* AppSettings.swift */; };
+		ACC5516DA320055720B9E4F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BE43DC7A71B7AD8CF5E9A /* ContentView.swift */; };
+		B6FDF398B1A82C2309EE5822 /* GhostlarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1B696A39600220EC30E594 /* GhostlarkApp.swift */; };
+		BC54401DF00F1FC82B9ACA4C /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E0FC549F1924D154256BD5 /* Keychain.swift */; };
+		C02805458B8E74919292E1AA /* SourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131A6B64DDEF1210FAE52568 /* SourceService.swift */; };
+		E5F7662B9EACCA259E854339 /* SingBoxConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7250F7124AC3659A09897F /* SingBoxConfig.swift */; };
+		EA3CDD06B7B20581BD631930 /* ShareLinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF647945D93A81FBD0E2172 /* ShareLinkParser.swift */; };
+		EA657CA44212B69F6A09398B /* ProxyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536CC43F503E804CE26B0C6 /* ProxyNode.swift */; };
+		F4E8F1B1DE3C663B9FAE7493 /* WARPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43C79370B4F3FDFA94F4A57 /* WARPService.swift */; };
+		FAD4B88A1D200E1531DCB199 /* SourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC62FAED49A5E0627B724E /* SourcesView.swift */; };
+		FBB9A9EFB49EDD80682FF6D9 /* NodeTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB524B70FA750F1FCABF221A /* NodeTester.swift */; };
+		FC8BC97073CD2C023D25C68A /* LogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294D6574EEC6EC184DAB8E41 /* LogsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00D8E3F10E035A301884E328 /* CoreProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreProcess.swift; sourceTree = "<group>"; };
+		131A6B64DDEF1210FAE52568 /* SourceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceService.swift; sourceTree = "<group>"; };
+		143BE43DC7A71B7AD8CF5E9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		294D6574EEC6EC184DAB8E41 /* LogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsView.swift; sourceTree = "<group>"; };
+		3932CCCD5C3F20790889559A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		399A63E894156C1D0D533478 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4B53D78BE6C276EE083E3E3B /* ServersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersView.swift; sourceTree = "<group>"; };
+		570048B78314B14BAD6C4195 /* LogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogStore.swift; sourceTree = "<group>"; };
+		65CA30B84F8FF578371EC7E5 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		6C9764009F7AFA1549D89DA4 /* SystemProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemProxy.swift; sourceTree = "<group>"; };
+		7C1B696A39600220EC30E594 /* GhostlarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostlarkApp.swift; sourceTree = "<group>"; };
+		7D7250F7124AC3659A09897F /* SingBoxConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingBoxConfig.swift; sourceTree = "<group>"; };
+		81527B2CE9CB52E12C117034 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		8215E7CE5645332EA8D702D1 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		8980B8EB89B6DC5460D3C163 /* ClashAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClashAPI.swift; sourceTree = "<group>"; };
+		9536CC43F503E804CE26B0C6 /* ProxyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyNode.swift; sourceTree = "<group>"; };
+		A3E0FC549F1924D154256BD5 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		B2E024AEC03B413DDF5B535D /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		BB3D8C84F79A552D4841AD88 /* sing-box */ = {isa = PBXFileReference; path = "sing-box"; sourceTree = "<group>"; };
+		C45340D1092F90F16F2A8A1D /* SafetyScorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyScorer.swift; sourceTree = "<group>"; };
+		CACC6C6595E2084C87682C7B /* Ghostlark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ghostlark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECC62FAED49A5E0627B724E /* SourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesView.swift; sourceTree = "<group>"; };
+		F43C79370B4F3FDFA94F4A57 /* WARPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WARPService.swift; sourceTree = "<group>"; };
+		F5D1A0F69035ADF83723E384 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		FB524B70FA750F1FCABF221A /* NodeTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTester.swift; sourceTree = "<group>"; };
+		FEF647945D93A81FBD0E2172 /* ShareLinkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkParser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1B6A76FF03A536AACC272BBA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				65CA30B84F8FF578371EC7E5 /* ConnectionManager.swift */,
+				570048B78314B14BAD6C4195 /* LogStore.swift */,
+				FB524B70FA750F1FCABF221A /* NodeTester.swift */,
+				131A6B64DDEF1210FAE52568 /* SourceService.swift */,
+				F43C79370B4F3FDFA94F4A57 /* WARPService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1F518559AEB0E977969130BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81527B2CE9CB52E12C117034 /* AppSettings.swift */,
+				9536CC43F503E804CE26B0C6 /* ProxyNode.swift */,
+				C45340D1092F90F16F2A8A1D /* SafetyScorer.swift */,
+				FEF647945D93A81FBD0E2172 /* ShareLinkParser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A272F5AD1EEA8A1498DD810 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F5D1A0F69035ADF83723E384 /* AppState.swift */,
+				7C1B696A39600220EC30E594 /* GhostlarkApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		82FE2484AEF2C7EF34447D32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CACC6C6595E2084C87682C7B /* Ghostlark.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A26442773BABE9BEA87106 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3932CCCD5C3F20790889559A /* Assets.xcassets */,
+				93F244416C07E61A278C444D /* bin */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		920FB8701C4EAFA03A78A043 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8980B8EB89B6DC5460D3C163 /* ClashAPI.swift */,
+				00D8E3F10E035A301884E328 /* CoreProcess.swift */,
+				A3E0FC549F1924D154256BD5 /* Keychain.swift */,
+				7D7250F7124AC3659A09897F /* SingBoxConfig.swift */,
+				6C9764009F7AFA1549D89DA4 /* SystemProxy.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		93F244416C07E61A278C444D /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				BB3D8C84F79A552D4841AD88 /* sing-box */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		BC46E2BCB4293F4644F8F6F8 = {
+			isa = PBXGroup;
+			children = (
+				C4977A8BC8295F7DCA6EEE30 /* Ghostlark */,
+				82FE2484AEF2C7EF34447D32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD3F7752D81BACD6200CBA22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				143BE43DC7A71B7AD8CF5E9A /* ContentView.swift */,
+				B2E024AEC03B413DDF5B535D /* DashboardView.swift */,
+				294D6574EEC6EC184DAB8E41 /* LogsView.swift */,
+				8215E7CE5645332EA8D702D1 /* MenuBarView.swift */,
+				4B53D78BE6C276EE083E3E3B /* ServersView.swift */,
+				399A63E894156C1D0D533478 /* SettingsView.swift */,
+				EECC62FAED49A5E0627B724E /* SourcesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4977A8BC8295F7DCA6EEE30 /* Ghostlark */ = {
+			isa = PBXGroup;
+			children = (
+				84A26442773BABE9BEA87106 /* Resources */,
+				D62930F9E49195DF6C6E954E /* Sources */,
+			);
+			path = Ghostlark;
+			sourceTree = "<group>";
+		};
+		D62930F9E49195DF6C6E954E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7A272F5AD1EEA8A1498DD810 /* App */,
+				920FB8701C4EAFA03A78A043 /* Core */,
+				1F518559AEB0E977969130BA /* Models */,
+				1B6A76FF03A536AACC272BBA /* Services */,
+				BD3F7752D81BACD6200CBA22 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1F50C7C2FD52C98E73E4A35 /* Ghostlark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABE42A5A1C52349807FCEFC3 /* Build configuration list for PBXNativeTarget "Ghostlark" */;
+			buildPhases = (
+				471D32CB0AB59134980158FA /* Sources */,
+				A50EED27EF144927CFFE6534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ghostlark;
+			packageProductDependencies = (
+			);
+			productName = Ghostlark;
+			productReference = CACC6C6595E2084C87682C7B /* Ghostlark.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D77913885BE4507D90B950DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C1F50C7C2FD52C98E73E4A35 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 606BF510152E9B6B490DC0AB /* Build configuration list for PBXProject "Ghostlark" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = BC46E2BCB4293F4644F8F6F8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 82FE2484AEF2C7EF34447D32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1F50C7C2FD52C98E73E4A35 /* Ghostlark */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A50EED27EF144927CFFE6534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106568E9F90156BB830A018C /* Assets.xcassets in Resources */,
+				4D791D7D2F638D685AE2819E /* sing-box in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		471D32CB0AB59134980158FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8514AFBA8531AD7126FD145 /* AppSettings.swift in Sources */,
+				4853E26ECB327DF95B40E85D /* AppState.swift in Sources */,
+				789B5415B431982673DA41A3 /* ClashAPI.swift in Sources */,
+				95B05423267D205EFFFA3528 /* ConnectionManager.swift in Sources */,
+				ACC5516DA320055720B9E4F1 /* ContentView.swift in Sources */,
+				4336AE7776A2E677A816D530 /* CoreProcess.swift in Sources */,
+				5E7879C98E3D40B5B6A7F33F /* DashboardView.swift in Sources */,
+				B6FDF398B1A82C2309EE5822 /* GhostlarkApp.swift in Sources */,
+				BC54401DF00F1FC82B9ACA4C /* Keychain.swift in Sources */,
+				4F8C47469CBC125FE73605E9 /* LogStore.swift in Sources */,
+				FC8BC97073CD2C023D25C68A /* LogsView.swift in Sources */,
+				9285F0956FBBB41AABE3E0E3 /* MenuBarView.swift in Sources */,
+				FBB9A9EFB49EDD80682FF6D9 /* NodeTester.swift in Sources */,
+				EA657CA44212B69F6A09398B /* ProxyNode.swift in Sources */,
+				15B72C3B939FE7459E123DE9 /* SafetyScorer.swift in Sources */,
+				718D926D06AF5F4AB302906C /* ServersView.swift in Sources */,
+				54B70575C7546E44F6F238AE /* SettingsView.swift in Sources */,
+				EA3CDD06B7B20581BD631930 /* ShareLinkParser.swift in Sources */,
+				E5F7662B9EACCA259E854339 /* SingBoxConfig.swift in Sources */,
+				C02805458B8E74919292E1AA /* SourceService.swift in Sources */,
+				FAD4B88A1D200E1531DCB199 /* SourcesView.swift in Sources */,
+				5E82DA1DB28D7934BE2E89E0 /* SystemProxy.swift in Sources */,
+				F4E8F1B1DE3C663B9FAE7493 /* WARPService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3135AA4133115CD3106CBABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Ghostlark/Info.plist;
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sepahi.ghostlark;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		57C40FAA01B696D7F3B7FA12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.3.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B39CACC81D41DF32986B6AF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Ghostlark/Info.plist;
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sepahi.ghostlark;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DA7A8DA5DD9EF11F84C36D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.3.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		606BF510152E9B6B490DC0AB /* Build configuration list for PBXProject "Ghostlark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57C40FAA01B696D7F3B7FA12 /* Debug */,
+				DA7A8DA5DD9EF11F84C36D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ABE42A5A1C52349807FCEFC3 /* Build configuration list for PBXNativeTarget "Ghostlark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39CACC81D41DF32986B6AF4 /* Debug */,
+				3135AA4133115CD3106CBABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D77913885BE4507D90B950DA /* Project object */;
+}

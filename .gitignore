@@ -1,0 +1,9 @@
+build/
+dist/
+Ghostlark.xcodeproj/xcuserdata/
+.DS_Store
+# Large binaries are attached to GitHub Releases instead (see scripts/fetch-core.sh)
+Ghostlark/Resources/bin/sing-box
+Android_Version/app/libs/libbox.aar
+Android_Version/*.apk
+release/

@@ -1,0 +1,45 @@
+name: Ghostlark
+options:
+  bundleIdPrefix: com.sepahi
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.3.0"
+    CURRENT_PROJECT_VERSION: "3"
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "-"
+    DEVELOPMENT_TEAM: ""
+    ENABLE_HARDENED_RUNTIME: NO
+    ENABLE_APP_SANDBOX: NO
+    SWIFT_STRICT_CONCURRENCY: minimal
+targets:
+  Ghostlark:
+    type: application
+    platform: macOS
+    sources:
+      - path: Ghostlark/Sources
+      - path: Ghostlark/Resources/Assets.xcassets
+      - path: Ghostlark/Resources/bin/sing-box
+        buildPhase: resources
+    info:
+      path: Ghostlark/Info.plist
+      properties:
+        CFBundleDisplayName: Ghostlark
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleName: Ghostlark
+        LSApplicationCategoryType: public.app-category.utilities
+        LSMinimumSystemVersion: "14.0"
+        NSHumanReadableCopyright: "Open source. sing-box core © SagerNet (GPLv3)."
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sepahi.ghostlark
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_NSMainStoryboardFile: ""
+        GENERATE_INFOPLIST_FILE: NO
