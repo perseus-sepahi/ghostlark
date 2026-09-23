@@ -22,12 +22,12 @@ copied between phones; the APK is self-contained.
 
 ## Support the project
 
-Ghostlark costs money to develop and to sign and notarize. Donations are welcome but never
-required, and they never unlock features. See the **Sponsor** button at the top of this page
-(GitHub Sponsors / Ko-fi / Liberapay), or the crypto addresses in [DONATE.md](DONATE.md) if
-those services are blocked for you.
+Ghostlark is free and always will be. Donations are optional and never unlock features;
+they pay for code signing, notarization and download mirrors.
 
----
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-db61a2?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/perseus-sepahi)
+
+**[github.com/sponsors/perseus-sepahi](https://github.com/sponsors/perseus-sepahi)**
 
 ## How it works (macOS app)
 Ghostlark finds free public proxy/VPN servers, rates how much protection each one actually

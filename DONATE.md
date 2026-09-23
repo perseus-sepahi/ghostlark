@@ -1,16 +1,10 @@
 # Donate
 
-Ghostlark is free software. Donations are optional and go toward the Apple Developer
-Program (code signing and notarization), the Google Play fee, and server costs for mirrors.
+Ghostlark is free software and always will be. Donations are optional, never unlock
+features, and go toward the Apple Developer Program (code signing and notarization),
+the Google Play fee, and hosting for download mirrors.
 
-- GitHub Sponsors: https://github.com/sponsors/perseus-sepahi
-- Ko-fi: https://ko-fi.com/YOUR_KOFI_NAME
-- Liberapay: https://liberapay.com/YOUR_LIBERAPAY_NAME
+**[Sponsor Ghostlark on GitHub](https://github.com/sponsors/perseus-sepahi)**: one-time
+or monthly, any amount. GitHub takes no fee.
 
-For donors in countries where those services are blocked:
-
-- Bitcoin (BTC): `PASTE_YOUR_ADDRESS`
-- Monero (XMR): `PASTE_YOUR_ADDRESS`
-- USDT (TRC-20): `PASTE_YOUR_ADDRESS`
-
-Never donate to an address you got from anywhere other than this file in the official repository.
+Thank you for keeping the internet open.
