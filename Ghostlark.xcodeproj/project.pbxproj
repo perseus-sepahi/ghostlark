@@ -185,6 +185,7 @@
 			buildPhases = (
 				471D32CB0AB59134980158FA /* Sources */,
 				A50EED27EF144927CFFE6534 /* Resources */,
+				CB9BD1938143E294E3FD5E3C /* Sign embedded sing-box */,
 			);
 			buildRules = (
 			);
@@ -242,6 +243,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CB9BD1938143E294E3FD5E3C /* Sign embedded sing-box */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Sign embedded sing-box";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "BIN=\"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sing-box\"\nif [ -f \"$BIN\" ]; then\n  ID=\"${EXPANDED_CODE_SIGN_IDENTITY:--}\"\n  TS=\"--timestamp\"; [ \"$ID\" = \"-\" ] && TS=\"--timestamp=none\"\n  codesign --force --options runtime $TS --sign \"$ID\" \"$BIN\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		471D32CB0AB59134980158FA /* Sources */ = {
@@ -334,7 +357,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = NO;
-				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -422,7 +445,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = NO;
-				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;

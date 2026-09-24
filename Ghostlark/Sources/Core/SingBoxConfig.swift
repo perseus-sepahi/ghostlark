@@ -1,6 +1,10 @@
 import Foundation
 
 /// Builds sing-box 1.14 JSON configurations from ProxyNodes and settings.
+///
+/// `auto_detect_interface` stays off on macOS: Ghostlark runs as a system proxy, not a TUN, so the core's own
+/// connections can never loop back into it. Binding to the physical interface would only break Ghostlark when
+/// another VPN (Cloudflare WARP, Proton, …) owns the default route and drops traffic that bypasses it.
 enum SingBoxConfig {
 
     static let warpPeerPublicKey = "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
@@ -197,7 +201,7 @@ enum SingBoxConfig {
             "route": [
                 "rules": routeRules,
                 "final": exitTag,
-                "auto_detect_interface": true,
+                "auto_detect_interface": false,
                 "default_domain_resolver": "dns-local",
             ] as [String: Any],
             "experimental": [
@@ -231,7 +235,7 @@ enum SingBoxConfig {
                 "strategy": "prefer_ipv4",
             ] as [String: Any],
             "outbounds": outbounds,
-            "route": ["final": "direct", "auto_detect_interface": true, "default_domain_resolver": "dns-local"] as [String: Any],
+            "route": ["final": "direct", "auto_detect_interface": false, "default_domain_resolver": "dns-local"] as [String: Any],
             "experimental": [
                 "clash_api": ["external_controller": "127.0.0.1:\(settings.testerApiPort)", "secret": apiSecret],
             ],

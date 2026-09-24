@@ -13,7 +13,7 @@ settings:
     CODE_SIGN_STYLE: Manual
     CODE_SIGN_IDENTITY: "-"
     DEVELOPMENT_TEAM: ""
-    ENABLE_HARDENED_RUNTIME: NO
+    ENABLE_HARDENED_RUNTIME: YES
     ENABLE_APP_SANDBOX: NO
     SWIFT_STRICT_CONCURRENCY: minimal
 targets:
@@ -25,6 +25,16 @@ targets:
       - path: Ghostlark/Resources/Assets.xcassets
       - path: Ghostlark/Resources/bin/sing-box
         buildPhase: resources
+    postBuildScripts:
+      - name: Sign embedded sing-box
+        basedOnDependencyAnalysis: false
+        script: |
+          BIN="${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sing-box"
+          if [ -f "$BIN" ]; then
+            ID="${EXPANDED_CODE_SIGN_IDENTITY:--}"
+            TS="--timestamp"; [ "$ID" = "-" ] && TS="--timestamp=none"
+            codesign --force --options runtime $TS --sign "$ID" "$BIN"
+          fi
     info:
       path: Ghostlark/Info.plist
       properties:

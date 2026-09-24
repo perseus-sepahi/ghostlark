@@ -96,6 +96,15 @@ Ghostlark/Sources
 Data lives in `~/Library/Application Support/Ghostlark/` (settings, sources, cached servers,
 generated core configs). The WARP private key is stored in the Keychain.
 
+## Signing the Mac app (maintainers)
+
+Release builds are signed with a Developer ID and notarized by Apple, so they open without warnings.
+
+1. Xcode → Settings → Accounts: add your Apple ID, then Manage Certificates → **+** → *Developer ID Application*.
+2. Create an app-specific password at https://account.apple.com (Sign-In and Security), then run once:
+   `xcrun notarytool store-credentials ghostlark --apple-id YOU@EXAMPLE.COM --team-id TEAMID`
+3. `scripts/release-mac.sh` builds, signs, notarizes and staples `release/Ghostlark-mac.zip`.
+
 ## Test hooks
 
 - `--autoconnect` launch argument runs "Find best & connect" on start.
