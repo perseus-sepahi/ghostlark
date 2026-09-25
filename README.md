@@ -14,7 +14,7 @@ Go to the **[Releases](../../releases/latest)** page:
 
 | Platform | File | Install |
 |---|---|---|
-| macOS 14+ (Apple Silicon) | `Ghostlark-mac.zip` | Unzip, drag `Ghostlark.app` to Applications. First launch: right-click → Open (the app is not notarized yet). |
+| macOS 14+ (Apple Silicon) | `Ghostlark-mac.zip` | Unzip and drag `Ghostlark.app` to Applications. Signed and notarized by Apple, so it opens without warnings. |
 | Android 8+ | `Ghostlark.apk` | Open the file on the phone and allow "install unknown apps" once. |
 
 If GitHub is blocked where you are, the release files can also be mirrored on Telegram or
