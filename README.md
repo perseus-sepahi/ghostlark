@@ -98,9 +98,10 @@ generated core configs). The WARP private key is stored in the Keychain.
 
 ## Signing the Mac app (maintainers)
 
-Release builds are signed with a Developer ID and notarized by Apple, so they open without warnings.
+Release builds are signed with Developer ID and notarized by Apple, so they open without warnings.
+Signing uses Xcode's cloud-managed certificates, so no Developer ID certificate has to live on the Mac.
 
-1. Xcode → Settings → Accounts: add your Apple ID, then Manage Certificates → **+** → *Developer ID Application*.
+1. Xcode → Settings → Accounts: sign in with the Apple ID of the paid developer team.
 2. Create an app-specific password at https://account.apple.com (Sign-In and Security), then run once:
    `xcrun notarytool store-credentials ghostlark --apple-id YOU@EXAMPLE.COM --team-id TEAMID`
 3. `scripts/release-mac.sh` builds, signs, notarizes and staples `release/Ghostlark-mac.zip`.
